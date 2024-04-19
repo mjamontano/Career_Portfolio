@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="icon" href="M Logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="M Logo.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Portfolio</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 50px;
+        background-color: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      /* Style for image */
+      .image {
+        height: 30px;
+        cursor: pointer;
+        color: rgb(194,0,0); /* Fallback color */
+        background-color: rgba(26,46,70,0); /* Black w/ opacity */
+        margin-right: 12px;
+        margin-left: 12px;
+        margin-top: 3px;
+        border-radius: 5px;
+      }
+
+      /* The Modal (background) */
+      .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(26,46,70,0.50); /* Black w/ opacity */
+      }
+
+      /* Modal Header */
+      .modal-header {
+        padding: 2px 16px;
+        background-color: rgba(194,0,0,0.75);
+        color: white;
+        border: 3px solid #1a2e46;
+      }
+
+      /* Modal Body */
+      .modal-body {
+        padding: 1px 16px;
+        border: 3px solid #1a2e46;
+      }
+
+      .modal-content {
+        background-color: #fefefe;
+        margin: auto;
+        padding: 0;
+        border: 10px solid #1a2e46;
+        width: 80%;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+        animation-name: animatetop;
+        animation-duration: 0.4s
+      }
+
+      .modal-footer {
+        padding: 2px 16px;
+        background-color: rgba(194,0,0,0.75);
+        color: white;
+        border: 3px solid #1a2e46;
+      }
+
+      .background {
+        background-image: url('Watermark 2.png');
+        background-size: cover; /* Adjusts the size of the background image to cover the entire container */
+        background-position: center; /* Centers the background image within the container */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; /* Ensure the background is behind other content */
+    }
+
+      /* Close button */
+      .close {
+        color: #1a2e46;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: #f0f0f0;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .container {
+        max-width: 5000px;
+        margin: 125px auto;
+        text-align: center;
+        padding: 20px;
+        display:flex;
+        flex-wrap: wrap;
+      }
+
+      .column {
+        flex: 1 1 30%;
+        padding: 5px;
+        border: 3px solid #1a2e46; 
+        box-sizing: border-box;
+      }
+      
+      h1 {
+        color: #1a2e46;
+        text-align: center;
+        font-weight: bold;
+      }
+
+      .header {
+        width: auto;
+        background-color: rgba(194, 0, 0 , 0.5);
+        color: #fff;
+        padding: 8px;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      .logo {
+        max-width: 100%;
+        height: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        transition: transform 0.3s ease;
+      }
+
+      .logo1 {
+        max-width: 100%;
+        height: 200px;
+        margin-top: 15x;
+        margin-bottom: 10px;
+        margin-right: 5px;
+        float: left;
+        transition: transform 0.3s ease;
+      }
+
+      .text {
+        overflow: hidden;
+        line-height: 1.3;
+        margin-top: 50px;
+        max-width: auto;
+      }
+
+      p {
+        margin: 0 0 10px 0;
+      }
+
+      .p-outside {
+        margin-top: 25px;
+        background-color: rgba(194, 0, 0 , 0.5);
+        font-weight: bold;
+        width: auto;
+        text-align: center;
+        letter-spacing: 15px;
+      }
+
+      .button-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+        text-align: center;
+      }
+
+      .button {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 10px;
+        background-color: #1a2e46;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 16px;
+        transition: transform 0.3s ease;
+      }
+
+      .button:hover {
+        transform: scale(1.1);
+        background-color: #c20000;
+      }
+
+      .bold {
+        font-weight: bold;
+      }
+
+      /* Adjust the width of columns based on screen size */
+      @media (max-width: auto) {
+        .container {
+          flex-direction: column; 
+        }
+        .column {
+          flex: 1 1 100%;
+        }
+      }
+
+      /* Add Animation */
+      @-webkit-keyframes animatetop {
+        from {top:-300px; opacity:0} 
+        to {top:0; opacity:1}
+      }
+
+      @keyframes animatetop {
+        from {top: -300px; opacity: 0}
+        to {top: 0; opacity: 1}
+      }
+    </style>
+</head>
+
+<body>
+  <div class="background"></div>
+  <div class="container">
+    <div class="column" style="background-color: rgba(26, 46, 70, 0.85); color: #fff;">
+      <!-- Content for first column -->
+      <div class="header">MONTANO, MICHAEL JOHN A.</div>       
+      <h3 class="p-outside">BIOGRAPHY</h3>
+      <p><span class="bold">Michael John Montano</span> is a <span class="bold">Development Operations Engineer</span> at <span class="bold">Infor PSSC Inc</span>. He has worked with many IT accounts, providing support to multiple applications <span style="font-style: italic">(in both technical-oriented and process-oriented)</span> during the last five years of his professional career. <span class="bold">Michael</span> has successfully managed various accounts simultaneously using his strong multitasking skills, adapting to previous events, and leveraging his desire to learn further. He has a diverse knowledge and experience in <span class="bold">Application Services, Incident Management Process, and Change Management Process</span>. <span class="bold">Michael</span> hopes to continue to self-actualize as he embodies the principle of lifelong learning.</p>
+      <h3 class="p-outside">CAREER PHILOSOPHY</h3>
+      <p>It's about your <span class="bold">CHARACTER</span> that determines your <span class="bold">VALUE</span>. Learning to develop it will yield <span class="bold">GOOD RESULTS</span>!</p>
+      <h3 class="p-outside">EDUCATION</h3>
+      <p><span class="bold">Polytechnic University of the Philippines (Sta. Mesa, Manila)</span></p>
+      <p>Bachelor of Science in Electronics Engineering | 2013 - 2018</p>
+      <img src="MJ.png" alt="MJ" class="logo1">
+      <div class="text">
+        <h3 style="background-color: rgba(194, 0, 0 , 0.5); text-align: center; letter-spacing: 15px;">CONTACTS</h3>
+        <!-- Trigger/Open The Modal 1-->
+        <button onclick="openModal('myModal1')" style="border: 2px solid #1a2e46;"><img src="email.png" alt="Email" class="image"></button>
+
+        <!-- The Modal -->
+        <div id="myModal1" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2>Email Address</h2>
+            </div>
+            <div class="modal-body">
+              <p style="color: #1a2e46;">mjamontano@gmail.com</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Trigger/Open The Modal 2-->
+        <button onclick="openModal('myModal2')" style="border: 2px solid #1a2e46;"><img src="mobile.png" alt="Mobile" class="image"></button>
+
+        <!-- The Modal -->
+        <div id="myModal2" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2>Mobile Number</h2>
+            </div>
+            <div class="modal-body">
+              <p style="color: #1a2e46;">+63961-338-8060</p>
+            </div>
+          </div>
+        </div>
+
+       <!-- Trigger/Open The Modal 3-->
+        <button onclick="openModal('myModal3')" style="border: 2px solid #1a2e46;"><img src="location.png" alt="Location" class="image"></button>
+
+        <!-- The Modal -->
+        <div id="myModal3" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2>Location</h2>
+            </div>
+            <div class="modal-body">
+              <p style="color: #1a2e46;">Western Bicutan, Taguig, Philippines, 1630</p>
+            </div>
+          </div>
+        </div>
+
+       <!-- Trigger/Open The Modal 4-->
+        <button onclick="openModal('myModal4')" style="border: 2px solid #1a2e46;"><img src="linkedin.png" alt="LinkedIn" class="image"></button>
+
+        <!-- The Modal -->
+        <div id="myModal4" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2>LinkedIn</h2>
+            </div>
+            <div class="modal-body">
+              <p style="color: #1a2e46;">Go to my <a href="https://www.linkedin.com/in/michael-john-montano/">LinkedIn</a> Account</p>
+            </div>
+          </div>
+        </div>
+
+        <script>
+        // Function to open modal
+        function openModal(modalId) {
+          var modal = document.getElementById(modalId);
+          modal.style.display = "block";
+        }
+
+        // Close the modal when clicking on close button or outside the modal
+        var modals = document.querySelectorAll('.modal');
+        modals.forEach(function(modal) {
+          modal.addEventListener('click', function(event) {
+            if (event.target === modal) {
+              modal.style.display = "none";
+            }
+          });
+        });
+
+        // Close the modal when clicking on close button
+        var closeButtons = document.querySelectorAll('.close');
+        closeButtons.forEach(function(closeButton) {
+          closeButton.addEventListener('click', function() {
+            var modal = closeButton.closest('.modal');
+            modal.style.display = "none";
+          });
+        });
+        </script>
+      </div>
+    </div>
+    <div class="column" style="background-color: #f0f0f0;">
+      <!-- Content for second column -->
+      <img src="M Logo.png" alt="Logo" class="logo">
+      <h1>Career Portfolio</h1>
+      <div class="button-container">
+        <a href="https://mjamontano.github.io/Awards_Recognitions/" class="button">Awards & Recognitions Inventory</a>
+        <a href="https://mjamontano.github.io/Certification_Badges/" class="button">Certification Inventory</a>
+        <a href="https://mjamontano.github.io/Course_Completion/" class="button">Course Completion Inventory</a>
+        <a href="https://mjamontano.github.io/Symposiums_Trainings/" class="button">Symposiums & Trainings Inventory</a>
+      </div>
+    </div>
+    <div class="column" style="background-color: rgba(26, 46, 70, 0.85); color: #fff;">
+      <!-- Content for third column -->
+      <div class="header">Development Operations Engineer</div>
+      <h3 class="p-outside">WORK EXPERIENCE</h3>
+       <!-- Trigger/Open The Modal 5-->
+        <button onclick="openModal('myModal5')" class="button">Application L2 Support</button>
+
+        <!-- The Modal -->
+        <div id="myModal5" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2>DXC Technology (Technical Consultant I)</h2>
+            </div>
+            <div class="modal-body">
+              <p style="color: #1a2e46;">Provide 24/7 technical support for multiple application software for different clients of Hewlett Packard Enterprise and Hewlett Packard Inc.</p>
+              <p style="color: #1a2e46;">Applying the principles of Incident & Change Management practices to daily operations.</p>
+              <p style="color: #1a2e46;">Suppots multiple Global Supply Chain Systems applications and became a Special Point of Contact (SPOC) to one of those.</p>
+              <p style="color: #1a2e46;">Applying knowledge and expertise for investigation of the issue to support business continuity.</p>
+              <p style="color: #1a2e46;">Applying workaround to known errors and documenting them for future purposes.</p>
+              <p style="color: #1a2e46;">Implementation / changes for supported applications in coordination with Change / Release Management teams.</p>
+              <p style="color: #1a2e46;">Attending / conducting quarterly training sessions to supported applications of expertise as part of Knowledge Transfer.</p>
+              <p style="color: #1a2e46;">Daily report status to mission critical applications to ensure that availability is not at risk.</p>
+              <p style="color: #1a2e46;">Proactive health checks to prevent further issues that might occur in the future.</p>
+              <p style="color: #1a2e46;">Aiding Subject Matter Expert (SME) with regards to compliance / maintenance of the application.</p>
+              <p style="color: #1a2e46;">Improving the health checks of the application by means of automation for continual improvement.</p>
+              <p style="color: #1a2e46;">Being a duty manager which is responsible for management of the queue to monitor ticket inflow that has been raised by business on a particular shift.</p>
+              <p style="color: #1a2e46;">Aiming to achieve the Service Level Agreement (SLA) standards for customer satisfaction.</p>
+
+            </div>
+            <div class="modal-footer">
+              <h3>Application L2 Support</h3>
+            </div>
+          </div>
+        </div>
+
+      <!-- Trigger/Open The Modal 6-->
+        <button onclick="openModal('myModal6')" class="button">Incident Management Process Manager</button>
+
+        <!-- The Modal -->
+        <div id="myModal6" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2>DXC Technology (Technical Consultant I)</h2>
+            </div>
+            <div class="modal-body">
+              <p style="color: #1a2e46;">Conducting quarterly training sessions with regards to INM guidelines and practices.</p>
+              <p style="color: #1a2e46;">Aiding the INM Process Owner for disseminating new protocols and making sure it is in line with the team and is being carried out.</p>
+              <p style="color: #1a2e46;">Coordinates with INM Process Owner all issues and concerns related to the process.</p>
+              <p style="color: #1a2e46;">Monitors and reports process performance and identifying improvement opportunities.</p>
+              <p style="color: #1a2e46;">Conducting bi-monthly INM ticket quality audits focusing on tickets closed by the team and helping them to understand the trends.</p>
+              <p style="color: #1a2e46;">Suggesting ideas that may help improve the overall performance of the team in applying INM guidelines.</p>
+            </div>
+            <div class="modal-footer">
+              <h3>Incident Management Process Manager</h3>
+            </div>
+          </div>
+        </div>
+
+      <!-- Trigger/Open The Modal 7-->
+        <button onclick="openModal('myModal7')" class="button">SOX Auditor Team Lead</button>
+
+        <!-- The Modal -->
+        <div id="myModal7" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2>DXC Technology (Technical Consultant I)</h2>
+            </div>
+            <div class="modal-body">
+              <p style="color: #1a2e46;">Auditing the changes happened in an application on a monthly / quarterly basis.</p>
+              <p style="color: #1a2e46;">Assessment of the user access if it is still active or is already revoked for security reasons.</p>
+              <p style="color: #1a2e46;">Reviewing all incidents that occurred in an applications and if they are documented or not.</p>
+              <p style="color: #1a2e46;">Coordination with Internal Auditors with regards to revision or compilation of evidences.</p>
+            </div>
+            <div class="modal-footer">
+              <h3>SOX Auditor Team Lead</h3>
+            </div>
+          </div>
+        </div>
+
+      <!-- Trigger/Open The Modal 8-->
+        <button onclick="openModal('myModal8')" class="button">Development Operations Engineer</button>
+
+        <!-- The Modal -->
+        <div id="myModal8" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2>Infor PSSC Inc.</h2>
+            </div>
+            <div class="modal-body">
+              <p style="color: #1a2e46;">Provides operations support from a wide variety of client organizations (mainly in healthcare, schools, and libraries) and performs the necessary support required to resolve issues.</p>
+              <p style="color: #1a2e46;">Proactively maintain system stability through monitoring and proactive maintenance (monthly / annually) of enviroments.</p>
+              <p style="color: #1a2e46;">Work with other teams to drive process improvements, test-driven development, and DevOps practice.</p>
+              <p style="color: #1a2e46;">Design and maintain tools to automate operational processes and support full automation testing (involvement in several JIRA projects).</p>
+              <p style="color: #1a2e46;">Expand upon existing automation to include additional manual or inefficient processes.</p>
+              <p style="color: #1a2e46;">Performs other duties as assigned.</p>
+              <p style="color: #1a2e46;">Successfully completes training requirements based on career development plan and assists in the development and training of others.</p>
+              <p style="color: #1a2e46;">Practicing the principles of Principle Based Management (PBM) approach acquired from Koch Industries. It's a framework based on the principles of human progress that enables individuals and organizations to succeed long term by creating superior value to others.</p>
+            </div>
+            <div class="modal-footer">
+              <h3>Development Operations Engineer</h3>
+            </div>
+          </div>
+        </div>
+
+        <script>
+        // Function to open modal
+        function openModal(modalId) {
+          var modal = document.getElementById(modalId);
+          modal.style.display = "block";
+        }
+
+        // Close the modal when clicking on close button or outside the modal
+        var modals = document.querySelectorAll('.modal');
+        modals.forEach(function(modal) {
+          modal.addEventListener('click', function(event) {
+            if (event.target === modal) {
+              modal.style.display = "none";
+            }
+          });
+        });
+
+        // Close the modal when clicking on close button
+        var closeButtons = document.querySelectorAll('.close');
+        closeButtons.forEach(function(closeButton) {
+          closeButton.addEventListener('click', function() {
+            var modal = closeButton.closest('.modal');
+            modal.style.display = "none";
+          });
+        });
+        </script>
+
+      <h3 class="p-outside">WORK EXPOSURE</h3>
+            <!-- Trigger/Open The Modal 9-->
+        <button onclick="openModal('myModal9')" class="button">OJT - Electronics</button>
+
+        <!-- The Modal -->
+        <div id="myModal9" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2>Hytec Power, Inc.: Reliable Partner & Solution Provider</h2>
+            </div>
+            <div class="modal-body">
+              <p style="color: #1a2e46;">April 11, 2016 - May 16, 2016</p>
+            </div>
+            <div class="modal-footer">
+              <h3>Product Specialist Department</h3>
+            </div>
+          </div>
+        </div>
+
+           <!-- Trigger/Open The Modal 10-->
+        <button onclick="openModal('myModal10')" class="button">OJT - Communications</button>
+
+        <!-- The Modal -->
+        <div id="myModal10" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2>Eastern Telecommunications Philippines, Incorporated</h2>
+            </div>
+            <div class="modal-body">
+              <p style="color: #1a2e46;">May 2, 2017 - July 4, 2017</p>
+            </div>
+            <div class="modal-footer">
+              <h3>Project Development | Transmission & Access Engineering</h3>
+            </div>
+          </div>
+        </div>
+
+        <script>
+        // Function to open modal
+        function openModal(modalId) {
+          var modal = document.getElementById(modalId);
+          modal.style.display = "block";
+        }
+
+        // Close the modal when clicking on close button or outside the modal
+        var modals = document.querySelectorAll('.modal');
+        modals.forEach(function(modal) {
+          modal.addEventListener('click', function(event) {
+            if (event.target === modal) {
+              modal.style.display = "none";
+            }
+          });
+        });
+
+        // Close the modal when clicking on close button
+        var closeButtons = document.querySelectorAll('.close');
+        closeButtons.forEach(function(closeButton) {
+          closeButton.addEventListener('click', function() {
+            var modal = closeButton.closest('.modal');
+            modal.style.display = "none";
+          });
+        });
+        </script>
+
+      <h3 class="p-outside">SKILLS</h3>
+             <!-- Trigger/Open The Modal 11-->
+        <button onclick="openModal('myModal11')" style="border: 2px solid #1a2e46;"><img src="skills.png" alt="Location" class="image"></button>
+
+        <!-- The Modal -->
+        <div id="myModal11" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2>Skills</h2>
+            </div>
+            <div class="modal-body">
+              <p style="color: #1a2e46;">Amazon Web Services (AWS)</p>
+              <p style="color: #1a2e46;">Change Management</p>
+              <p style="color: #1a2e46;">Cisco Tidal Scheduler</p>
+              <p style="color: #1a2e46;">HP Service Manager (HPSM)</p>
+              <p style="color: #1a2e46;">Incident Management</p>
+              <p style="color: #1a2e46;">Information Technology Infrastructure Library (ITIL)</p>
+              <p style="color: #1a2e46;">Internet Information Services (IIS)</p>
+              <p style="color: #1a2e46;">Linux Operating System</p>
+              <p style="color: #1a2e46;">Microsoft Office (Excel, OneNote, Outlook, Powerpoint, Word)</p>
+              <p style="color: #1a2e46;">Mobaxterm</p>
+              <p style="color: #1a2e46;">MySQL</p>
+              <p style="color: #1a2e46;">PostgreSQL</p>
+              <p style="color: #1a2e46;">Putty</p>
+              <p style="color: #1a2e46;">Sarbanes-Oxley Act (SOX)</p>
+              <p style="color: #1a2e46;">Scrum</p>
+              <p style="color: #1a2e46;">ServiceNow</p>
+              <p style="color: #1a2e46;">Simple Object Access Protocol (SOAP)</p>
+              <p style="color: #1a2e46;">Structured Query Language (SQL)</p>
+              <p style="color: #1a2e46;">SQL Server Management Studio</p>
+              <p style="color: #1a2e46;">Veritas Cluster Server</p>
+              <p style="color: #1a2e46;">Weblogic</p>
+              <p style="color: #1a2e46;">Windows Operating System</p>
+            </div>
+          </div>
+        </div>
+
+        <script>
+        // Function to open modal
+        function openModal(modalId) {
+          var modal = document.getElementById(modalId);
+          modal.style.display = "block";
+        }
+
+        // Close the modal when clicking on close button or outside the modal
+        var modals = document.querySelectorAll('.modal');
+        modals.forEach(function(modal) {
+          modal.addEventListener('click', function(event) {
+            if (event.target === modal) {
+              modal.style.display = "none";
+            }
+          });
+        });
+
+        // Close the modal when clicking on close button
+        var closeButtons = document.querySelectorAll('.close');
+        closeButtons.forEach(function(closeButton) {
+          closeButton.addEventListener('click', function() {
+            var modal = closeButton.closest('.modal');
+            modal.style.display = "none";
+          });
+        });
+        </script>
+
+      <h3 class="p-outside">RESUME</h3>
+              <!-- Trigger/Open The Modal 12-->
+        <button onclick="openModal('myModal12')" style="border: 2px solid #1a2e46;"><img src="resume.png" alt="Resume" class="image"></button>
+
+        <!-- The Modal -->
+        <div id="myModal12" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2>Resume</h2>
+            </div>
+            <div class="modal-body">
+              <p style="color: #1a2e46;">View my <a href="MJAM Resume v4.pdf">resume</a> here.</p>
+            </div>
+          </div>
+        </div>
+
+        <script>
+        // Function to open modal
+        function openModal(modalId) {
+          var modal = document.getElementById(modalId);
+          modal.style.display = "block";
+        }
+
+        // Close the modal when clicking on close button or outside the modal
+        var modals = document.querySelectorAll('.modal');
+        modals.forEach(function(modal) {
+          modal.addEventListener('click', function(event) {
+            if (event.target === modal) {
+              modal.style.display = "none";
+            }
+          });
+        });
+
+        // Close the modal when clicking on close button
+        var closeButtons = document.querySelectorAll('.close');
+        closeButtons.forEach(function(closeButton) {
+          closeButton.addEventListener('click', function() {
+            var modal = closeButton.closest('.modal');
+            modal.style.display = "none";
+          });
+        });
+        </script>
+
+      <h3 class="p-outside">ONGOING PERSONAL PROJECTS</h3>
+              <!-- Trigger/Open The Modal 13-->
+        <button onclick="openModal('myModal13')" style="border: 2px solid #1a2e46;"><img src="balagtas.png" alt="Resume" class="image"></button>
+
+        <!-- The Modal -->
+        <div id="myModal13" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2>La Liberación (Coming Soon... Work in Progress)</h2>
+            </div>
+            <div class="modal-body">
+              <p style="color: #1a2e46;">Visit La Liberación website <a href="https://www.linkedin.com/in/michael-john-montano/">here</a>.</p>
+            </div>
+          </div>
+        </div>
+
+              <!-- Trigger/Open The Modal 14-->
+        <button onclick="openModal('myModal14')" style="border: 2px solid #1a2e46;"><img src="Close-Eat.png" alt="Resume" class="image"></button>
+
+        <!-- The Modal -->
+        <div id="myModal14" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2>Clos-Eat (Coming Soon... Work in Progress)</h2>
+            </div>
+            <div class="modal-body">
+              <p style="color: #1a2e46;">Visit Clos-Eat website <a href="https://www.linkedin.com/in/michael-john-montano/">here</a>.</p>
+            </div>
+          </div>
+        </div>
+
+        <script>
+        // Function to open modal
+        function openModal(modalId) {
+          var modal = document.getElementById(modalId);
+          modal.style.display = "block";
+        }
+
+        // Close the modal when clicking on close button or outside the modal
+        var modals = document.querySelectorAll('.modal');
+        modals.forEach(function(modal) {
+          modal.addEventListener('click', function(event) {
+            if (event.target === modal) {
+              modal.style.display = "none";
+            }
+          });
+        });
+
+        // Close the modal when clicking on close button
+        var closeButtons = document.querySelectorAll('.close');
+        closeButtons.forEach(function(closeButton) {
+          closeButton.addEventListener('click', function() {
+            var modal = closeButton.closest('.modal');
+            modal.style.display = "none";
+          });
+        });
+        </script>
+
+      </div>
+  </div>
+</body>
+</html>
