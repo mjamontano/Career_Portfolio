@@ -132,13 +132,15 @@
   }
 
   .header-banner {
-    max-width: auto; /* Set maximum width to ensure responsiveness */
     height: auto; /* Automatically adjust height based on content */
-    overflow: clip; /* Hide any overflowing parts of the image */
-    position: relative;
+    max-width: auto; /* Set maximum width to ensure responsiveness */
     object-fit: cover; /* Ensure the image covers the entire area */
+    overflow: clip;
+    background-color: #1a2e46;
+    position: relative;
+    text-align: center;
   }
-
+  
   /* Style for image */
   .image {
     background-color: rgba(6, 9, 12, 0); /* Black w/ opacity */
