@@ -1,278 +1,438 @@
 <!-- Author: Michael John Montano -->
-<!-- 2nd Sprint Update: 04/27/2024 (Deadline: 04/28/2024) -->
-    <!-- Separated styles.css and href it to html file to call its parameters -->
-<!-- 3rd Sprint Update: 05/06/2024 (Deadline: 05/12/2024) -->
-<!-- 4th Sprint Update: N/A -->
-    <!-- Added Lines 48-56 (Data Analysis with Pandas and Python)-->
-<!-- 5th Sprint Update: 06/07/2024 (Deadline: 06/09/2024)-->
-    <!-- Added Lines 50-58 (Understanding Personality Types at Work)-->
-<!-- 6th Sprint Update: 06/13/2024 (Deadline: 06/23/2024)-->
-    <!-- Added Line 55: Ei4Change.png-->
-    <!-- Added Lines 21-25: background logo + Home button-->
-    <!-- Modified Line 30 Disclaimer, Line 49 CY 2024, Line 93 CY 2023, Line 154 CY 2022, & Line 179 CY 2020 by importing to class="logo"-->
+<!-- V2 = 2nd Sprint Update: 04/27/2024 (Deadline: 04/28/2024) -->
+  <!-- Separated styles.css and script.js, then relate them to html file to call its parameters -->
+  <!-- Merged the Sprint 2 Updates for: Symposiums/Trainings, Course Completion, Awards/Recognitions, & Certification Badges -->    
+  <!-- Made modifications in styles.css -->
+<!-- 3rd - 4th Sprint Update: N/A-->
+<!-- V3 = 5th Sprint Update: 05/30/2024 (Deadline: 06/09/2024)-->
+  <!-- [styles.css] Added Lines 31-33; 134-140; 172-200 -->
+  <!-- [styles.css] Line 100: From "margin: 20px auto;" to "margin: 60px auto;"-->
+  <!-- [index.html] Added Lines 26-35: Header Banner & Menu Navigator -->
+<!-- V4 = 6th Sprint Update: 06/13/2024 (Deadline: 06/23/2024)-->
+  <!-- Modified Line 380 & 398: Removed "(Coming Soon... Work in Progress)"-->
+  <!-- Modified Line 34: Added href to Cycling Journey Menu-->
+<!-- 7th Sprint Update: N/A -->
+<!-- 8th Sprint Update: 07/19/2024 (Deadline: 07/21/2024)-->
+  <!-- Fixed menu navigation and header banner; transferred Cycling Journey to Personal Projects from Menu Navigation; Added modifications to header-banner class in styles.css-->
+<!-- 9th - 11th Sprint Update: N/A -->
+<!-- 12th Sprint Update: 09/03/2024 (Deadline: 09/15/2024)--> 
+  <!-- Added DISC Assessment to header menu-->
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="icon" href="medal.png" type="image/x-icon">
-    <link rel="shortcut icon" href="medal.png" type="image/x-icon">
+    <link rel="icon" href="M Logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="M Logo.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Portfolio</title>
 </head>
 
 <body>
-<div class="background"></div>
-<div class="center-container">
-    <a href="https://mjamontano.github.io/Career_Portfolio/" class="home-button">Go back to "Career Portfolio"</a>
+  <div class="background"></div>
+  <div class="header-banner">
+    <img src="header_banner.png" alt="Header Banner">
+    <nav class="menu">
+      <ul>
+        <li><a href="https://mjamontano.github.io/Career_Portfolio/">Home</a></li>
+	      <li>|||</li>
+        <li><a href="#">MBTI Personality</a></li>
+        <li>|||</li>
+        <li><a href="#">DISC Assessment</a></li>
+      </ul>
+    </nav>
   </div>
-<h1></h1>
-<div class="logo">
-    Course Completion Inventory
-</div>
-<h1></h1>
-<div class="logo">
-    Disclaimer
-</div>
-<table id="table1">
-    <tr>
-        <th>Certification Badge</th>
-        <th>Accreditor</th>
-        <th>Description</th>
-        <th>Notes</th>
-    </tr>
-    <tr>
-        <td><img src="CertiProf _ Life Long Learning.png" alt="CertiProf _ Life Long Learning" class="badge" style="margin-left: 20px; margin-right: 20px"></td>
-        <td><img src="CertiProf Logo.png" alt="CertiProf Logo" class="accreditor" style="margin-left: 20px; margin-right: 20px"></td>
-        <td>Life Long Learning</td>
-        <td style="font-style:italic; font-weight: bold">"Earners with this badge have proven their unwavering commitment to lifelong learning, vitally important in today's ever-changing and expanding digital world. It also identifies the qualities of an open-minded, disciplined, and constantly evolving mind, capable of using and contributing its knowledge to develop a more equal and better world." - www.certiprof.com</td>
-    </tr>
-</table>
+  <div class="container">
+    <div class="column" style="background-color: rgba(26, 46, 70, 0.85); color: #fff;">
+      <!-- Content for first column -->
+      <div class="header">MONTANO, MICHAEL JOHN A.</div>       
+      <h3 class="p-outside">BIOGRAPHY</h3>
+      <p><span class="bold">Michael John Montano</span> is a <span class="bold">Development Operations Engineer</span> at <span class="bold">Infor PSSC Inc</span>. He has worked with many IT accounts, providing support to multiple applications <span style="font-style: italic">(in both technical-oriented and process-oriented)</span> during the last five years of his professional career. <span class="bold">Michael</span> has successfully managed various accounts simultaneously using his strong multitasking skills, adapting to previous events, and leveraging his desire to learn further. He has a diverse knowledge and experience in <span class="bold">Application Services, Incident Management Process, and Change Management Process</span>. <span class="bold">Michael</span> hopes to continue to self-actualize as he embodies the principle of lifelong learning.</p>
+      <h3 class="p-outside">CAREER PHILOSOPHY</h3>
+      <p>It's about your <span class="bold">CHARACTER</span> that determines your <span class="bold">VALUE</span>. Learning to develop it will yield <span class="bold">GOOD RESULTS</span>!</p>
+      <h3 class="p-outside">EDUCATION</h3>
+      <p><span class="bold">Polytechnic University of the Philippines (Sta. Mesa, Manila)</span></p>
+      <p>Bachelor of Science in Electronics Engineering | 2013 - 2018</p>
+      <img src="MJ.png" alt="MJ" class="logo1">
+      <div class="text">
+        <h3 style="background-color: rgba(194, 0, 0 , 0.5); text-align: center; letter-spacing: 15px;">CONTACTS</h3>
+        <!-- Trigger/Open The Modal 1-->
+        <button onclick="openModal('myModal1')" style="border: 2px solid #1a2e46;"><img src="email.png" alt="Email" class="image"></button>
 
-<h1></h1>
-<div class="logo">
-    Calendar Year 2024
-</div>
-<table id="table2">
-    <tr>
-        <th>Course</th>
-        <th>Accreditor</th>
-        <th>Instructor</th>
-        <th>Certificate Number</th>
-        <th>Date</th>
-        <th>Length</th>
-        <th>View Digital Certificate</th>
-    </tr>
-    <tr>
-        <td>Understanding Personality Types at Work</td>
-        <td><img src="Udemy.png" alt="Udemy" class="badge" style="margin-left: 20px; margin-right: 20px">
-            <img src="Ei4Change.png" alt="Ei4Change" class="badge" style="margin-left: 20px;margin-right: 20px"></td>
-        <td>Robin Hills</td>
-        <td>UC-c4d30d2e-3cc1-4e0a-bce5-3d03ed711c9a</td>
-        <td>June 7, 2024</td>
-        <td>1.5 hours</td>
-        <td><a href="Understanding Personality Types at Work.pdf" target="_blank">View Digital Certificate</a></td>
-    </tr> 
-    <tr>
-        <td>Data Analysis with Pandas and Python</td>
-        <td><img src="Udemy.png" alt="Udemy" class="badge" style="margin-left: 20px; margin-right: 20px"></td>
-        <td>Boris Paskhaver</td>
-        <td>UC-e29d2717-f61c-44e2-99b3-8472689beec4</td>
-        <td>May 6, 2024</td>
-        <td>19.5 hours</td>
-        <td><a href="Data Analysis with Pandas and Python.pdf" target="_blank">View Digital Certificate</a></td>
-    </tr> 
-    <tr>
-        <td>Master SQL For Data Science</td>
-        <td><img src="Udemy.png" alt="Udemy" class="badge" style="margin-left: 20px; margin-right: 20px"></td>
-        <td>Job Ready Programmer</td>
-        <td>UC-b6b7a7cb-afa1-494d-bf31-f33ca293b5ce</td>
-        <td>April 11, 2024</td>
-        <td>9.5 hours</td>
-        <td><a href="Master SQL For Data Science.pdf" target="_blank">View Digital Certificate</a></td>
-    </tr> 
-</table>
+        <!-- The Modal -->
+        <div id="myModal1" class="modal">
 
-<h1></h1>
-<div class="logo">
-    Calendar Year 2023
-</div>
-<table id="table2">
-    <tr>
-        <th>Course</th>
-        <th>Accreditor</th>
-        <th>Instructor</th>
-        <th>Certificate Number</th>
-        <th>Date</th>
-        <th>Length</th>
-        <th>View Digital Certificate</th>
-    </tr>
-    <tr>
-        <td>Linux Redhat Certified System Administrator (RHCSA - EX200)</td>
-        <td><img src="Udemy.png" alt="Udemy" class="badge" style="margin-left: 20px; margin-right: 20px"></td>
-        <td>Imran Afzal</td>
-        <td>UC-70473b83-f293-41e9-b5db-19a01d44e391</td>
-        <td>August 17, 2023</td>
-        <td>14 hours</td>
-        <td><a href="Linux Redhat Certified System Administrator (RHCSA - EX200).pdf" target="_blank">View Digital Certificate</a></td>
-    </tr>
-    <tr>
-        <td>Linux Redhat System Administration I - SA1 (RHEL8)</td>
-        <td><img src="Udemy.png" alt="Udemy" class="badge" style="margin-left: 20px; margin-right: 20px"></td>
-        <td>Shikhar Verma</td>
-        <td>UC-8355a78d-6c82-4941-893b-6f55901cc60d</td>
-        <td>April 25, 2023</td>
-        <td>11.5 hours</td>
-        <td><a href="Linux Redhat System Administration I - SA1 (RHEL8).pdf" target="_blank">View Digital Certificate</a></td>
-    </tr>
-    <tr>
-        <td>Intro to Data Science: Your Step-by-Step Guide to Starting </td>
-        <td><img src="Udemy.png" alt="Udemy" class="badge" style="margin-left: 20px; margin-right: 20px"></td>
-        <td>Kirill Eremenko, Hadelin de Ponteves, Ligency 1 team, Ligency Team</td>
-        <td>UC-a122648-86e2-45ea-8af9-9afc2520aa0c</td>
-        <td>March 28, 2023</td>
-        <td>5 hours</td>
-        <td><a href="Intro to Data Science_ Your Step-by-Step Guide to Starting.pdf" target="_blank">View Digital Certificate</a></td>
-    </tr>
-    <tr>
-        <td>Sub-topic: Machine Learning in Python and Jupyter for Beginners</td>
-        <td><img src="Udemy.png" alt="Udemy" class="badge" style="margin-left: 20px; margin-right: 20px"></td>
-        <td>David Valentine</td>
-        <td>UC-0d8fcf1b-880c-495f-ab8b-a33238046396</td>
-        <td>March 26, 2023</td>
-        <td>5.5 hours</td>
-        <td><a href="Introduction to Machine Learning for Data Science.pdf" target="_blank">View Digital Certificate</a></td>
-    </tr>
-    <tr>
-        <td>Introduction to Machine Learning for Data Science</td>
-        <td><img src="Udemy.png" alt="Udemy" class="badge" style="margin-left: 20px; margin-right: 20px"></td>
-        <td>David Valentine</td>
-        <td>UC-0d8fcf1b-880c-495f-ab8b-a33238046396</td>
-        <td>March 21, 2023</td>
-        <td>5.5 hours</td>
-        <td><a href="Introduction to Machine Learning for Data Science.pdf" target="_blank">View Digital Certificate</a></td>
-    </tr>
-</table>
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2>Email Address</h2>
+            </div>
+            <div class="modal-body">
+              <p style="color: #1a2e46;">mjamontano@gmail.com</p>
+            </div>
+          </div>
+        </div>
 
-<h1></h1>
-<div class="logo">
-    Calendar Year 2022
-</div>
-<table id="table2">
-    <tr>
-        <th>Course</th>
-        <th>Accreditor</th>
-        <th>Instructor</th>
-        <th>Certificate Number</th>
-        <th>Date</th>
-        <th>Length</th>
-        <th>View Digital Certificate</th>
-    </tr>
-    <tr>
-        <td>Lens - Kubernetes IDE</td>
-        <td><img src="KodeKloud.png" alt="KodeKloud" class="badge" style="margin-left: 20px; margin-right: 20px"></td>
-        <td>Mumshad Mannambeth</td>
-        <td>7EDBFA2D1D-8147ECD633-7CBD4846D5</td>
-        <td>May 6, 2022</td>
-        <td>N/A</td>
-        <td><a href="Lens - Kubernetes IDE.pdf" target="_blank">View Digital Certificate</a></td>
-    </tr>
-</table>
+        <!-- Trigger/Open The Modal 2-->
+        <button onclick="openModal('myModal2')" style="border: 2px solid #1a2e46;"><img src="mobile.png" alt="Mobile" class="image"></button>
 
-<h1></h1>
-<div class="logo">
-    Calendar Year 2020
-</div>
-<table id="table2">
-    <tr>
-        <th>Course</th>
-        <th>Accreditor</th>
-        <th>Instructor</th>
-        <th>Certificate Number</th>
-        <th>Date</th>
-        <th>Length</th>
-        <th>View Digital Certificate</th>
-    </tr>
-    <tr>
-        <td>Oracle Database 12c R2 SQL: Using Subqueries to Solve Queries</td>
-        <td><img src="DXC Technology.png" alt="DXC Technology" class="badge" style="margin-left: 20px; margin-right: 20px"></td>
-        <td>DXC Technology</td>
-        <td>00052429</td>
-        <td>September 18, 2020</td>
-        <td>1 hour 23 minutes</td>
-        <td><a href="Oracle Database 12c R2 SQL Using Subqueries to Solve Queries.pdf" target="_blank">View Digital Certificate</a></td>
-    </tr>
-    <tr>
-        <td>Oracle Database 12c R2 SQL: Using Structured Query Language (SQL)</td>
-        <td><img src="DXC Technology.png" alt="DXC Technology" class="badge" style="margin-left: 20px; margin-right: 20px"></td>
-        <td>DXC Technology</td>
-        <td>00049620</td>
-        <td>September 17, 2020</td>
-        <td>50 minutes</td>
-        <td><a href="Oracle Database 12c R2 SQL Using Structured Query Language (SQL).pdf" target="_blank">View Digital Certificate</a></td>
-    </tr>
-    <tr>
-        <td>Oracle Database 12c R2 SQL: Data Manipulation Language and Transaction Control Language</td>
-        <td><img src="DXC Technology.png" alt="DXC Technology" class="badge" style="margin-left: 20px; margin-right: 20px"></td>
-        <td>DXC Technology</td>
-        <td>00049884</td>
-        <td>September 17, 2020</td>
-        <td>1 hour</td>
-        <td><a href="Oracle Database 12c R2 SQL Data Manipulation Language and Transaction Control Language.pdf" target="_blank">View Digital Certificate</a></td>
-    </tr>
-    <tr>
-        <td>Unix Hardening and Maintenance</td>
-        <td><img src="DXC Technology.png" alt="DXC Technology" class="badge" style="margin-left: 20px; margin-right: 20px"></td>
-        <td>DXC Technology</td>
-        <td>00023257</td>
-        <td>September 16, 2020</td>
-        <td>34 minutes</td>
-        <td><a href="Unix Hardening and Maintenance.pdf" target="_blank">View Digital Certificate</a></td>
-    </tr>
-    <tr>
-        <td>ITIL Service Design Processes</td>
-        <td><img src="DXC Technology.png" alt="DXC Technology" class="badge" style="margin-left: 20px; margin-right: 20px"></td>
-        <td>DXC Technology</td>
-        <td>00024986</td>
-        <td>September 16, 2020</td>
-        <td>1 hour 14 minutes</td>
-        <td><a href="ITIL Service Design Processes.pdf" target="_blank">View Digital Certificate</a></td>
-    </tr>
-    <tr>
-        <td>ITIL Service Operation Processes</td>
-        <td><img src="DXC Technology.png" alt="DXC Technology" class="badge" style="margin-left: 20px; margin-right: 20px"></td>
-        <td>DXC Technology</td>
-        <td>00024729</td>
-        <td>September 13, 2020</td>
-        <td>43 minutes</td>
-        <td><a href="ITIL Service Operation Processes.pdf" target="_blank">View Digital Certificate</a></td>
-    </tr>
-    <tr>
-        <td>ITIL 4 Foundation: Introduction</td>
-        <td><img src="DXC Technology.png" alt="DXC Technology" class="badge" style="margin-left: 20px; margin-right: 20px"></td>
-        <td>DXC Technology</td>
-        <td>00057848</td>
-        <td>September 13, 2020</td>
-        <td>23 minutes</td>
-        <td><a href="ITIL 4 Foundation Introduction.pdf" target="_blank">View Digital Certificate</a></td>
-    </tr>
-    <tr>
-        <td>Spartans White Belt 3.0 Digital Transformation</td>
-        <td><img src="DXC Technology.png" alt="DXC Technology" class="badge" style="margin-left: 20px; margin-right: 20px"></td>
-        <td>DXC Technology</td>
-        <td>00014827</td>
-        <td>March 6, 2020</td>
-        <td>17 minutes</td>
-        <td><a href="Spartans White Belt 3.0 Digital Transformation - ARCHIVED.pdf" target="_blank">View Digital Certificate</a></td>
-    </tr>
-    <tr>
-        <td>Accelerated Solution Development Overview</td>
-        <td><img src="DXC Technology.png" alt="DXC Technology" class="badge" style="margin-left: 20px; margin-right: 20px"></td>
-        <td>DXC Technology</td>
-        <td>00037661</td>
-        <td>March 6, 2020</td>
-        <td>20 minutes</td>
-        <td><a href="Accelerated Solution Development Overview.pdf" target="_blank">View Digital Certificate</a></td>
-    </tr>
-</table>
+        <!-- The Modal -->
+        <div id="myModal2" class="modal">
 
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2>Mobile Number</h2>
+            </div>
+            <div class="modal-body">
+              <p style="color: #1a2e46;">+63961-338-8060</p>
+            </div>
+          </div>
+        </div>
+
+       <!-- Trigger/Open The Modal 3-->
+        <button onclick="openModal('myModal3')" style="border: 2px solid #1a2e46;"><img src="location.png" alt="Location" class="image"></button>
+
+        <!-- The Modal -->
+        <div id="myModal3" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2>Location</h2>
+            </div>
+            <div class="modal-body">
+              <p style="color: #1a2e46;">Western Bicutan, Taguig, Philippines, 1630</p>
+            </div>
+          </div>
+        </div>
+
+       <!-- Trigger/Open The Modal 4-->
+        <button onclick="openModal('myModal4')" style="border: 2px solid #1a2e46;"><img src="linkedin.png" alt="LinkedIn" class="image"></button>
+
+        <!-- The Modal -->
+        <div id="myModal4" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2>LinkedIn</h2>
+            </div>
+            <div class="modal-body">
+              <p style="color: #1a2e46;">Go to my <a href="https://www.linkedin.com/in/michael-john-montano/">LinkedIn</a> Account</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Link to the JavaScript file -->
+        <script src="script.js"></script>
+      </div>
+    </div>
+    <div class="column" style="background-color: #f0f0f0;">
+      <!-- Content for second column -->
+      <img src="M Logo.png" alt="Logo" class="logo">
+      <h1>Career Portfolio</h1>
+      <div class="button-container">
+        <a href="https://mjamontano.github.io/Awards_Recognitions/" class="button">Awards & Recognitions Inventory</a>
+        <a href="https://mjamontano.github.io/Certification_Badges/" class="button">Certification Inventory</a>
+        <a href="https://mjamontano.github.io/Course_Completion/" class="button">Course Completion Inventory</a>
+        <a href="https://mjamontano.github.io/Symposiums_Trainings/" class="button">Symposiums & Trainings Inventory</a>
+      </div>
+    </div>
+    <div class="column" style="background-color: rgba(26, 46, 70, 0.85); color: #fff;">
+      <!-- Content for third column -->
+      <div class="header">Development Operations Engineer</div>
+      <h3 class="p-outside">WORK EXPERIENCE</h3>
+       <!-- Trigger/Open The Modal 5-->
+        <button onclick="openModal('myModal5')" class="button">WE-1</button>
+
+        <!-- The Modal -->
+        <div id="myModal5" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2>DXC Technology (Technical Consultant I)</h2>
+            </div>
+            <div class="modal-body">
+              <p style="color: #1a2e46;">Provide 24/7 technical support for multiple application software for different clients of Hewlett Packard Enterprise and Hewlett Packard Inc.</p>
+              <p style="color: #1a2e46;">Applying the principles of Incident & Change Management practices to daily operations.</p>
+              <p style="color: #1a2e46;">Supports multiple Global Supply Chain Systems applications and became a Special Point of Contact (SPOC) to one of those.</p>
+              <p style="color: #1a2e46;">Applying knowledge and expertise for investigation of the issue to support business continuity.</p>
+              <p style="color: #1a2e46;">Applying workaround to known errors and documenting them for future purposes.</p>
+              <p style="color: #1a2e46;">Implementation / changes for supported applications in coordination with Change / Release Management teams.</p>
+              <p style="color: #1a2e46;">Attending / conducting quarterly training sessions to supported applications of expertise as part of Knowledge Transfer.</p>
+              <p style="color: #1a2e46;">Daily report status to mission critical applications to ensure that availability is not at risk.</p>
+              <p style="color: #1a2e46;">Proactive health checks to prevent further issues that might occur in the future.</p>
+              <p style="color: #1a2e46;">Aiding Subject Matter Expert (SME) with regards to compliance / maintenance of the application.</p>
+              <p style="color: #1a2e46;">Improving the health checks of the application by means of automation for continual improvement.</p>
+              <p style="color: #1a2e46;">Being a duty manager which is responsible for management of the queue to monitor ticket inflow that has been raised by business on a particular shift.</p>
+              <p style="color: #1a2e46;">Aiming to achieve the Service Level Agreement (SLA) standards for customer satisfaction.</p>
+
+            </div>
+            <div class="modal-footer">
+              <h3>Application L2 Support</h3>
+            </div>
+          </div>
+        </div>
+
+      <!-- Trigger/Open The Modal 6-->
+        <button onclick="openModal('myModal6')" class="button">WE-2</button>
+
+        <!-- The Modal -->
+        <div id="myModal6" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2>DXC Technology (Technical Consultant I)</h2>
+            </div>
+            <div class="modal-body">
+              <p style="color: #1a2e46;">Conducting quarterly training sessions with regards to INM guidelines and practices.</p>
+              <p style="color: #1a2e46;">Aiding the INM Process Owner for disseminating new protocols and making sure it is in line with the team and is being carried out.</p>
+              <p style="color: #1a2e46;">Coordinates with INM Process Owner all issues and concerns related to the process.</p>
+              <p style="color: #1a2e46;">Monitors and reports process performance and identifying improvement opportunities.</p>
+              <p style="color: #1a2e46;">Conducting bi-monthly INM ticket quality audits focusing on tickets closed by the team and helping them to understand the trends.</p>
+              <p style="color: #1a2e46;">Suggesting ideas that may help improve the overall performance of the team in applying INM guidelines.</p>
+            </div>
+            <div class="modal-footer">
+              <h3>Incident Management Process Manager</h3>
+            </div>
+          </div>
+        </div>
+
+      <!-- Trigger/Open The Modal 7-->
+        <button onclick="openModal('myModal7')" class="button">WE-3</button>
+
+        <!-- The Modal -->
+        <div id="myModal7" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2>DXC Technology (Technical Consultant I)</h2>
+            </div>
+            <div class="modal-body">
+              <p style="color: #1a2e46;">Auditing the changes happened in an application on a monthly / quarterly basis.</p>
+              <p style="color: #1a2e46;">Assessment of the user access if it is still active or is already revoked for security reasons.</p>
+              <p style="color: #1a2e46;">Reviewing all incidents that occurred in an applications and if they are documented or not.</p>
+              <p style="color: #1a2e46;">Coordination with Internal Auditors with regards to revision or compilation of evidences.</p>
+            </div>
+            <div class="modal-footer">
+              <h3>SOX Auditor Team Lead</h3>
+            </div>
+          </div>
+        </div>
+
+      <!-- Trigger/Open The Modal 8-->
+        <button onclick="openModal('myModal8')" class="button">WE-4</button>
+
+        <!-- The Modal -->
+        <div id="myModal8" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2>Infor PSSC Inc.</h2>
+            </div>
+            <div class="modal-body">
+              <p style="color: #1a2e46;">Provides operations support from a wide variety of client organizations (mainly in healthcare, schools, and libraries) and performs the necessary support required to resolve issues.</p>
+              <p style="color: #1a2e46;">Proactively maintain system stability through monitoring and proactive maintenance (monthly / annually) of enviroments.</p>
+              <p style="color: #1a2e46;">Work with other teams to drive process improvements, test-driven development, and DevOps practice.</p>
+              <p style="color: #1a2e46;">Design and maintain tools to automate operational processes and support full automation testing (involvement in several JIRA projects).</p>
+              <p style="color: #1a2e46;">Expand upon existing automation to include additional manual or inefficient processes.</p>
+              <p style="color: #1a2e46;">Performs other duties as assigned.</p>
+              <p style="color: #1a2e46;">Successfully completes training requirements based on career development plan and assists in the development and training of others.</p>
+              <p style="color: #1a2e46;">Practicing the principles of Principle Based Management (PBM) approach acquired from Koch Industries. It's a framework based on the principles of human progress that enables individuals and organizations to succeed long term by creating superior value to others.</p>
+            </div>
+            <div class="modal-footer">
+              <h3>Development Operations Engineer</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- Link to the JavaScript file -->
+        <script src="script.js"></script>
+
+      <h3 class="p-outside">WORK EXPOSURE</h3>
+            <!-- Trigger/Open The Modal 9-->
+        <button onclick="openModal('myModal9')" class="button">OJT - Electronics</button>
+
+        <!-- The Modal -->
+        <div id="myModal9" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2>Hytec Power, Inc.: Reliable Partner & Solution Provider</h2>
+            </div>
+            <div class="modal-body">
+              <p style="color: #1a2e46;">April 11, 2016 - May 16, 2016</p>
+            </div>
+            <div class="modal-footer">
+              <h3>Product Specialist Department</h3>
+            </div>
+          </div>
+        </div>
+
+           <!-- Trigger/Open The Modal 10-->
+        <button onclick="openModal('myModal10')" class="button">OJT - Communications</button>
+
+        <!-- The Modal -->
+        <div id="myModal10" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2>Eastern Telecommunications Philippines, Incorporated</h2>
+            </div>
+            <div class="modal-body">
+              <p style="color: #1a2e46;">May 2, 2017 - July 4, 2017</p>
+            </div>
+            <div class="modal-footer">
+              <h3>Project Development | Transmission & Access Engineering</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- Link to the JavaScript file -->
+        <script src="script.js"></script>
+
+      <h3 class="p-outside">SKILLS</h3>
+             <!-- Trigger/Open The Modal 11-->
+        <button onclick="openModal('myModal11')" style="border: 2px solid #1a2e46;"><img src="skills.png" alt="Location" class="image"></button>
+
+        <!-- The Modal -->
+        <div id="myModal11" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2>Skills</h2>
+            </div>
+            <div class="modal-body">
+              <p style="color: #1a2e46;">Amazon Web Services (AWS)</p>
+              <p style="color: #1a2e46;">Change Management</p>
+              <p style="color: #1a2e46;">Cisco Tidal Scheduler</p>
+              <p style="color: #1a2e46;">HP Service Manager (HPSM)</p>
+              <p style="color: #1a2e46;">Incident Management</p>
+              <p style="color: #1a2e46;">Information Technology Infrastructure Library (ITIL)</p>
+              <p style="color: #1a2e46;">Internet Information Services (IIS)</p>
+              <p style="color: #1a2e46;">Linux Operating System</p>
+              <p style="color: #1a2e46;">Microsoft Office (Excel, OneNote, Outlook, Powerpoint, Word)</p>
+              <p style="color: #1a2e46;">Mobaxterm</p>
+              <p style="color: #1a2e46;">MySQL</p>
+              <p style="color: #1a2e46;">PostgreSQL</p>
+              <p style="color: #1a2e46;">Putty</p>
+              <p style="color: #1a2e46;">Sarbanes-Oxley Act (SOX)</p>
+              <p style="color: #1a2e46;">Scrum</p>
+              <p style="color: #1a2e46;">ServiceNow</p>
+              <p style="color: #1a2e46;">Simple Object Access Protocol (SOAP)</p>
+              <p style="color: #1a2e46;">Structured Query Language (SQL)</p>
+              <p style="color: #1a2e46;">SQL Server Management Studio</p>
+              <p style="color: #1a2e46;">Veritas Cluster Server</p>
+              <p style="color: #1a2e46;">Weblogic</p>
+              <p style="color: #1a2e46;">Windows Operating System</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Link to the JavaScript file -->
+        <script src="script.js"></script>
+
+      <h3 class="p-outside">RESUME</h3>
+              <!-- Trigger/Open The Modal 12-->
+        <button onclick="openModal('myModal12')" style="border: 2px solid #1a2e46;"><img src="resume.png" alt="Resume" class="image"></button>
+
+        <!-- The Modal -->
+        <div id="myModal12" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2>Resume</h2>
+            </div>
+            <div class="modal-body">
+              <p style="color: #1a2e46;">View my resume <a href="MJAM Resume v4.pdf">here</a>.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Link to the JavaScript file -->
+        <script src="script.js"></script>
+
+      <h3 class="p-outside">PERSONAL PROJECTS</h3>
+              <!-- Trigger/Open The Modal 13-->
+        <button onclick="openModal('myModal13')" style="border: 2px solid #1a2e46;"><img src="La-Liberacion.png" alt="Resume" class="image"></button>
+
+        <!-- The Modal -->
+        <div id="myModal13" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2>La Liberación</h2>
+            </div>
+            <div class="modal-body">
+              <p style="color: #1a2e46;">Visit <b>"La Liberación"</b> website <a href="https://mjamontano.github.io/La_Liberacion/">here</a>.</p>
+            </div>
+          </div>
+        </div>
+
+              <!-- Trigger/Open The Modal 14-->
+        <button onclick="openModal('myModal14')" style="border: 2px solid #1a2e46;"><img src="Close-Eat.png" alt="Resume" class="image"></button>
+
+        <!-- The Modal -->
+        <div id="myModal14" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2>Clos-Eat</h2>
+            </div>
+            <div class="modal-body">
+              <p style="color: #1a2e46;">Visit <b>"Clos-Eat website"</b> <a href="https://mjamontano.github.io/Clos-Eat/">here</a>.</p>
+            </div>
+          </div>
+        </div>
+
+              <!-- Trigger/Open The Modal 15-->
+              <button onclick="openModal('myModal15')" style="border: 2px solid #1a2e46;"><img src="Cycling-Journey.png" alt="Cycling Journey Logo" class="image"></button>
+
+              <!-- The Modal -->
+              <div id="myModal15" class="modal">
+      
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>Cycling Journey</h2>
+                  </div>
+                  <div class="modal-body">
+                    <p style="color: #1a2e46;">Visit <b>"Cycling Journey"</b> website <a href="https://mjamontano.github.io/Cycling_Journey/">here</a>.</p>
+                  </div>
+                </div>
+              </div>
+      
+        <!-- Link to the JavaScript file -->
+        <script src="script.js"></script>
+
+      </div>
+  </div>
 </body>
 </html>
