@@ -77,7 +77,6 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
     text-align: center;
   }
 
@@ -87,7 +86,16 @@
   }
 
   .column {
-    border: 3px solid #1a2e46; 
+    border: 1px hidden #1a2e46; 
+    box-sizing: border-box;
+    flex: 1 1 30%;
+    padding: 5px;
+  }
+
+  .column1 {
+    border: 1px hidden #1a2e46; 
+    border: inset rgba(26, 46, 70, 1); /* Border color */
+    border-radius: 5px; /* Rounded corners */
     box-sizing: border-box;
     flex: 1 1 30%;
     padding: 5px;
@@ -97,9 +105,7 @@
     display:flex;
     flex-wrap: wrap;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 60px auto;
     max-width: 5000px;
-    padding: 20px;
     text-align: center;
   }
 
@@ -124,9 +130,20 @@
     background-color: rgba(194, 0, 0 , 0.5);
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 24px;
+    font-size: 25px;
     font-weight: bold;
-    padding: 8px;
+    padding: 10px;
+    text-align: center;
+    width: auto; 
+  }
+
+  .header1 {
+    background-color: rgba(194, 0, 0 , 0.5);
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 20px;
     text-align: center;
     width: auto; 
   }
@@ -153,22 +170,51 @@
     margin-top: 3px;
   }
 
+  .image-container {
+    text-align: center; /* Optional: Centers the images */
+  }
+
+  .image-container img {
+    display: inline-block;
+    width: 48%; /* Set a fixed width for images */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+
   .logo {
     height: auto;
-    margin-bottom: 20px;
-    margin-top: 20px;
     max-width: 100%;
     transition: transform 0.3s ease;
   }
 
   .logo1 {
-    float: left;
-    height: 200px;
-    margin-top: 15x;
+    height: auto;
+    margin-top: 10px;
     margin-bottom: 10px;
-    margin-right: 5px;
-    max-width: 100%;
+    max-width: 50%;
     transition: transform 0.3s ease;
+  }
+
+  .logo2 {
+    height: auto;
+    max-width: 15%;
+    transition: transform 0.3s ease;
+  }
+
+  .logo3 {
+    background-color: #1a2e46; /* Background color of the logo */
+    border: inset rgba(26, 46, 70, 1); /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    color: #fff; /* Change the color as needed */
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 20px;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    word-spacing: 15px;
   }
 
   .menu {
@@ -263,8 +309,7 @@
     background-color: rgba(194, 0, 0 , 0.5);
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    letter-spacing: 15px;
-    margin-top: 25px;
+    letter-spacing: 10px;
     text-align: center;
     width: auto;
   }
